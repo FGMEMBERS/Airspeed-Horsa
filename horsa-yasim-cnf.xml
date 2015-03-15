@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+************************************************************************
+AirSpeed Horsa
+Setpember 2011 BARANGER Emmanuel
+************************************************************************
+-->
+
+<PropertyList include="horsa-base.xml">
+
+  <sim>
+
+    <description>AirSpeed Horsa (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>horsa-yasim</aero>
+
+  </sim>
+    
+</PropertyList>

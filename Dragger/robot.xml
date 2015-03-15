@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+more to come :-)
+-->
+<PropertyList>
+
+  <path>dr400.ac</path>
+  
+  <offsets>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>1.0</z-m>
+    <pitch-deg>0</pitch-deg> 
+  </offsets>
+  
+  <!-- animations -->
+  <animation>
+    <type>select</type>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/glider/dragger/robot/run</property>
+        <value>0.50</value>
+      </greater-than>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>helice</object-name>
+    <condition>
+      <less-than>
+        <property>sim/glider/dragger/robot/run</property>
+        <value>0.50</value>
+      </less-than>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+    <object-name>helice</object-name>
+    <property>sim/glider/dragger/robot/run</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m> -3.274 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.029 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

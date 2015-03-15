@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <fx>
+
+    <tyre-rumble>
+      <name>tyre-rumble</name>
+      <mode>looped</mode>
+      <path>Aircraft/Grob-Astir/Sounds/ground_roll3.wav</path>
+      <condition>
+        <or>
+          <property>/gear/gear[0]/wow</property>
+          <property>/gear/gear[1]/wow</property>
+          <property>/gear/gear[2]/wow</property>
+        </or>
+      </condition>
+      <volume>
+        <property>velocities/groundspeed-kt</property>
+        <factor>0.05</factor>
+      </volume>
+    </tyre-rumble>
+
+    <wind>
+      <name>wind</name>
+      <mode>looped</mode>
+      <path>Sounds/wind.wav</path>
+      <property>velocities/airspeed-kt</property>
+      <volume>
+        <property>position/altitude-ft</property>
+        <factor>-0.000015</factor>
+        <offset>1.0</offset>
+        <min>0.1</min>
+        <max>1.0</max>
+      </volume>
+      <volume>
+         <property>velocities/airspeed-kt</property>
+         <factor>0.0015</factor>
+         <min>0.03</min>
+         <max>0.5</max>
+      </volume>
+      <pitch>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+        <offset>1.25</offset>
+      </pitch>
+    </wind>
+
+    <winch_tow>
+      <name>winch_tow</name>
+      <mode>looped</mode>
+      <path>Aircraft/Grob-Astir/Sounds/winch_tow.wav</path>
+      <condition>
+        <not>
+          <property>sim/hitches/winch/open</property>
+        </not>
+      </condition>
+      <volume>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+        <max>1</max>
+      </volume>
+    </winch_tow>
+
+    <whoosh-positive>
+      <name>whoosh-positive</name>
+      <mode>once</mode>
+      <path>Aircraft/Grob-Astir/Sounds/whoosh.wav</path>
+      <condition>
+        <greater-than>
+          <property>orientation/pitch-rate-degps</property>
+          <value>15</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <property>orientation/pitch-rate-degps</property>
+        <factor>0.01</factor>
+        <max>1</max>
+      </volume>
+    </whoosh-positive>
+
+    <whoosh-negative>
+      <name>whoosh-negative</name>
+      <mode>once</mode>
+      <path>Aircraft/Grob-Astir/Sounds/whoosh.wav</path>
+      <condition>
+        <less-than>
+          <property>orientation/pitch-rate-degps</property>
+          <value>-15</value>
+        </less-than>
+      </condition>
+      <volume>
+        <property>orientation/pitch-rate-degps</property>
+        <factor>-0.01</factor>
+        <max>1</max>
+      </volume>
+    </whoosh-negative>
+
+    <cable_release>
+      <name>cable_release</name>
+      <mode>once</mode>
+      <path>Aircraft/Grob-Astir/Sounds/winch_release.wav</path>
+      <condition>
+        <property>sim/hitches/winch/open</property>
+      </condition>
+    </cable_release>
+  
+  </fx>
+ 
+</PropertyList>
+

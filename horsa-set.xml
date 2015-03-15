@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="horsa-jsbsim-cnf.xml"> -->
+<PropertyList include="horsa-yasim-cnf.xml">
+
+  <sim>
+  
+    <description>AirSpeed Horsa (YASim)</description>
+    <author>BARANGER Emmanuel</author>
+
+    <status>beta production</status>
+    <rating>
+     <FDM type="int">     2 </FDM>
+     <systems type="int"> 2 </systems>
+     <cockpit type="int"> 2 </cockpit>
+     <model type="int">   4 </model>
+    </rating>
+    
+  </sim>
+
+</PropertyList>
+
