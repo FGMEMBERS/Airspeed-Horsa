@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Systems/horsa-base.xml">
+
+  <sim>
+  
+    <description>AirSpeed Horsa (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <status>Alpha</status>
+    
+    <flight-model>yasim</flight-model>
+    <aero>Systems/horsa-yasim</aero>
+    
+    <rating>
+     <FDM type="int">     2 </FDM>
+     <systems type="int"> 2 </systems>
+     <cockpit type="int"> 2 </cockpit>
+     <model type="int">   4 </model>
+    </rating>
+    
+  </sim>
+
+</PropertyList>
