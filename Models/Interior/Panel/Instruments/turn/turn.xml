@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <path>turn.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Airspeed-Horsa/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>needle1</object-name>
+    <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <interpolation> 
+      <entry><ind> -3 </ind><dep> -30 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  3 </ind><dep>  30 </dep></entry>
+    </interpolation>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>needle2</object-name>
+    <property>instrumentation/turn-indicator/indicated-turn-rate</property>
+    <interpolation> 
+      <entry><ind> -4 </ind><dep> -60 </dep></entry>
+      <entry><ind> -3 </ind><dep> -45 </dep></entry>
+      <entry><ind> -2 </ind><dep> -30 </dep></entry>
+      <entry><ind> -1 </ind><dep> -15 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  1 </ind><dep>  15 </dep></entry>
+      <entry><ind>  2 </ind><dep>  30 </dep></entry>
+      <entry><ind>  3 </ind><dep>  45 </dep></entry>
+      <entry><ind>  4 </ind><dep>  60 </dep></entry>
+    </interpolation>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

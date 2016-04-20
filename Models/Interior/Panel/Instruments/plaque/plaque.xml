@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>plaque.ac</path>
+
+  <animation>
+    <object-name>plaque</object-name>
+    <object-name>visses</object-name>
+
+  </animation>
+
+</PropertyList>
