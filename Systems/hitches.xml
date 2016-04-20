@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- make sure some properties do exist, when the list for multiplayer transfere is defined
+  they need to be in the same value, as they are initilized in the FDM, to get the same 
+  values after reset should fix this somehow-->
+  <aerotow>
+    <tow>
+      <length type="float">60</length>
+      <elastic-constant type="float">10000</elastic-constant>
+      <weight-per-m-kg-m type="float">1</weight-per-m-kg-m>
+      <dist type="float">1</dist>
+      <connected-to-property-node type="bool"></connected-to-property-node>
+      <brake-force type="float">100000</brake-force>
+      <connected-to-ai-or-mp-callsign type ="string">*</connected-to-ai-or-mp-callsign>
+      <end-force-x type ="float">0</end-force-x>
+      <end-force-y type ="float">0</end-force-y>
+      <end-force-z type ="float">0</end-force-z>
+    </tow>
+    <speed-in-tow-direction type="float">0</speed-in-tow-direction>
+    <open type="bool">true</open>
+    <local-pos-x type="float">0</local-pos-x>
+    <local-pos-y type="float">0</local-pos-y>
+    <local-pos-z type="float">0</local-pos-z>
+    <is-slave type="bool">false</is-slave>
+  </aerotow>
+  
+</PropertyList>

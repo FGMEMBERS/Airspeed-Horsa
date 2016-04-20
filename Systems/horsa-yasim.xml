@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- AirSpeed AS.51 Horsa : BARANGER Emmanuel (10/2011)
+                  Updated : with Melchior's script (11/2011)
+                  Updated : BARANGER Emmanuel (04/2016)
+                          
+     sources         : http://en.wikipedia.org/wiki/Airspeed_Horsa
+
+     Wingspan        : 88 ft 00 in ( 26.83 m  )
+     Lenght          : 67 ft 00 in ( 20.43 m  )
+     Height          : 19 ft 60 in (  5.95 m  )
+     Empty mass      :     8370 lb (  3804 kg )
+     Cruise speed    :   130 kts   ( 240 km/h )
+     Maximim speed   :   242 km/h  ( 131.9 kt ) on tow
+                         160 km/h  (  87.2 kt ) gliding
+-->
+<airplane mass="8370" version="YASIM_VERSION_CURRENT">
+
+  <!-- Approach configuration -->
+  <approach speed="20" aoa="2" glide-angle="2"/>
+
+  <!-- Cruise configuration -->
+  <cruise speed="87.2" alt="8000" glide-angle="6"/>
+
+  <!-- pilot's eyepoint -->
+  <cockpit x="8.649" y="0.559" z="-0.526"/>
+
+  <fuselage ax="10.161" ay="0" az="-1.301" bx=" 8.860" by="0" bz="-0.948" width="2" taper="0.30" midpoint="1"/>
+  <fuselage ax=" 8.860" ay="0" az="-0.948" bx="-2.485" by="0" bz="-0.948" width="2" taper="1.00" midpoint="1"/>
+  <fuselage ax="-2.485" ay="0" az="-0.948" bx="-8.933" by="0" bz="-0.555" width="2" taper="0.30" midpoint="0"/>
+
+  <mstab x="1.493" y="0" z="0"
+         chord="4.829"
+         length="3.491"
+         taper="1">
+         <stall aoa="22" width="1" peak="1.5"/>
+  </mstab>
+
+  <wing x="1.493" y="3.491" z="0"
+        chord="4.829"
+        length="9.906"
+        taper="0.5"
+        dihedral="1.5"
+        sweep="7"
+        camber="0.004">
+        <stall aoa="18" width="1" peak="1.5"/>
+        <flap0 start="-0.240" end="0.275" lift="1.30" drag="1.4"/>
+        <flap1 start=" 0.282" end="0.926" lift="1.55" drag="1.3"/>
+        <spoiler start="0.04" end="0.259" lift="2.00" drag="15.5"/>
+
+        <control-input  control="FLAP0"   axis="/controls/flight/flaps"/>
+        <control-input  control="FLAP1"   axis="/controls/flight/aileron" split="true"/>
+        <!-- <control-input  control="SPOILER" axis="/controls/flight/spoilers"/> -->
+        <control-input  control="SPOILER" axis="controls/engines/engine/throttle"/>
+        
+        <control-output control="FLAP0"   prop="/surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1"   prop="/surface-positions/left-aileron-pos-norm"  side="left"/>
+        <control-output control="FLAP1"   prop="/surface-positions/right-aileron-pos-norm" side="right"/>
+        <control-output control="SPOILER" prop="/surface-positions/spoiler-pos-norm"/>
+  </wing>
+
+  <hstab x="-8.390" y="0" z="0.569"
+         chord="2.258"
+         length="5.080"
+         taper="1"> 
+         <stall aoa="16" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.6" drag="1.3"/>
+
+         <control-input  control="FLAP0" axis="/controls/flight/elevator"/>
+         <control-input  control="FLAP0" axis="/controls/flight/elevator-trim"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-8.610" y="0" z="-1.205"
+         chord="3.405"
+         length="4.176"
+         taper="0.5">
+         <stall aoa="14" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.6" drag="1.3"/>
+
+         <control-input  control="FLAP0" axis="/controls/flight/rudder"      invert="true" square="true" />
+         <control-input  control="FLAP0" axis="/controls/flight/rudder-trim" invert="true"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
+  </vstab>
+
+  <!-- Nose wheel -->
+  <gear x="8.061" y="0" z="-2.970"
+        compression="0.15"
+        spring="0.8"
+        sfric="1"
+        dfric="1">
+        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1" src1="1" dst0="-0.1" dst1="0.1"/>
+  </gear>
+
+  <!-- Left wheel-->
+  <gear x="1.400" y=" 2.590" z="-2.943"
+        compression="0.12"
+        spring="1.8" 
+        damp="0.03">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+  </gear>
+
+  <!-- Right wheel -->
+  <gear x="1.400" y="-2.590" z="-2.943"
+        compression="0.12"
+        spring="1.8" 
+        damp="0.03">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+  </gear>
+
+  <!-- pilots -->
+  <ballast x="8.802" y=" 0.560" z="-0.954" mass="140"/>
+  <ballast x="8.802" y="-0.560" z="-0.954" mass="140"/>
+
+  <!-- hitch -->
+  <hitch name="winch" 
+         x="8.154" y="0" z="-2.335">
+         <tow length="51" 
+              weight-per-meter="0.1" 
+              elastic-constant="40000"
+              break-force="10000"/>
+              <!-- 4.5mm steel wire-->
+         <winch max-tow-length="1000"
+                min-tow-length="1"
+                initial-tow-length="1000"
+                max-winch-speed="40"
+                power="150"
+                max-force="6000" />
+         <control-input axis="/controls/winch/place" control="PLACEWINCH"/>
+  </hitch>
+
+  <hitch name="aerotow" 
+         x="8.154" y="0" z="-2.335"
+         force-is-calculated-by-other="0">
+         <tow length="60" 
+              weight-per-meter="0.035" 
+              elastic-constant="9000" 
+              break-force="10000" 
+              mp-auto-connect-period="0.0"/>
+         <winch max-tow-length="1000" 
+                min-tow-length="60" 
+                initial-tow-length="60"/>
+         <control-input axis="/controls/aerotow/find-aircraft" control="FINDAITOW"/>
+  </hitch>
+
+  <!-- Mass displacment  -->
+  <ballast x="8" y="0" z="-2.4" mass="1500"/>
+
+</airplane>
