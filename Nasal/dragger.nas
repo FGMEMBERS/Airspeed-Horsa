@@ -65,8 +65,13 @@
   var dragrobot_timeincrement_s = 0.05;                     # timer increment
 
   # constants for describing dragger key properties
+<<<<<<< HEAD
   var glob_min_speed_takeoff_mps  = 20;       # minimum speed for take-off of drag-robot
   var glob_max_speed_mps          = 36;       # maximum speed of drag-robot
+=======
+  var glob_min_speed_takeoff_mps  = 50;       # minimum speed for take-off of drag-robot
+  var glob_max_speed_mps          = 100;      # maximum speed of drag-robot
+>>>>>>> svn/master
   var glob_max_speed_lift_mps     = 3;        # maximum lift speed of drag-robot
   var glob_max_speed_tauten_mps   = 2;        # maximum speed to tauten the rope
   var glob_min_acceleration_mpss  = 0.5;      # minimum acceleration
@@ -176,7 +181,11 @@ var createDragRobot = func {
   
   dragger_mod.model = dragger_mod.getChild("model", freeModelid, 1);
 ############################################################################################## Specific to airplane (better in Generic I think)
+<<<<<<< HEAD
   dragger_mod.model.getNode("path", 1).setValue("Aircraft/ASK21-MI/Models/Dragger/robot.xml");
+=======
+  dragger_mod.model.getNode("path", 1).setValue("Aircraft/Airspeed-Horsa/Models/Dragger/robot.xml");
+>>>>>>> svn/master
 ##############################################################################################
   dragger_mod.model.getNode("longitude-deg-prop", 1).setValue("ai/models/dragger/position/longitude-deg");
   dragger_mod.model.getNode("latitude-deg-prop", 1).setValue("ai/models/dragger/position/latitude-deg");
@@ -661,4 +670,7 @@ var runDragRobot = func {
 }
 
 var pulling = setlistener("/sim/glider/dragger/robot/run", runDragRobot);
+<<<<<<< HEAD
 
+=======
+>>>>>>> svn/master

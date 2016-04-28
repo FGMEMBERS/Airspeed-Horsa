@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
+=======
+<?xml version="1.0" encoding="ISO-8859-1"?>
+>>>>>>> svn/master
 
 <PropertyList>
 
@@ -10,14 +14,26 @@
 
     <condition>
       <and>
+<<<<<<< HEAD
         <property>/gear/gear[1]/wow</property>
         <greater-than>
           <property>/gear/gear[1]/rollspeed-ms</property>
+=======
+        <!-- /gear/gear[1]/wow -->
+        <property>sim/multiplay/generic/float[5]</property>
+        <greater-than>
+          <!-- /gear/gear[1]/rollspeed-ms -->
+          <property>sim/multiplay/generic/float[8]</property>
+>>>>>>> svn/master
           <value>15</value>
         </greater-than>
       </and>
     </condition>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> svn/master
     <attach>world</attach>
 
     <placer>

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
+=======
+<?xml version="1.0" encoding="ISO-8859-1"?>
+>>>>>>> svn/master
 
 <PropertyList>
 
@@ -29,6 +33,7 @@
     <property>controls/flight/elevator</property>
     <factor> -15 </factor> 
     <center>
+<<<<<<< HEAD
       <x-m>  0.300 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.307 </z-m>
@@ -37,6 +42,16 @@
       <x> 0.000 </x>
       <y> 1.000 </y>
       <z> 0.000 </z>
+=======
+      <x-m> 0.300 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.307 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+>>>>>>> svn/master
     </axis>
   </animation>
 
@@ -44,6 +59,7 @@
     <type>rotate</type>
     <object-name>tete</object-name>
     <property>controls/flight/rudder</property>
+<<<<<<< HEAD
     <factor>-25</factor>
     <center>
       <x-m>  0.300 </x-m>
@@ -54,6 +70,18 @@
       <x> 0.000 </x>
       <y> 0.000 </y>
       <z> 1.000 </z>
+=======
+    <factor> -25 </factor>
+    <center>
+      <x-m> 0.300 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.307 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+>>>>>>> svn/master
     </axis>
   </animation>
 
@@ -61,6 +89,7 @@
     <type>rotate</type>
     <object-name>tete</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
+<<<<<<< HEAD
     <factor> -10.0</factor>
     <center>
       <x-m>  0.300 </x-m>
@@ -71,8 +100,23 @@
       <x> 1.000 </x>
       <y> 0.000 </y>
       <z> 0.000 </z>
+=======
+    <factor> -10 </factor>
+    <center>
+      <x-m> 0.300 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.307 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+>>>>>>> svn/master
     </axis>
   </animation> 
 
 </PropertyList>
+<<<<<<< HEAD
 
+=======
+>>>>>>> svn/master

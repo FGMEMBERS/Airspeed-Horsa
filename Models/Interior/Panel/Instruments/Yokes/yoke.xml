@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>yoke.ac</path>
+  
+  <animation>
+    <object-name>base</object-name>
+    <object-name>support</object-name>
+    <object-name>yoke</object-name>
+  </animation>
+  
+  <animation>
+    <name>VolantsComplets</name>
+    <object-name>support</object-name>
+    <object-name>yoke</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>VolantsComplets</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep>  5 </dep></entry>
+      <entry><ind>  0 </ind><dep>  0 </dep></entry>
+      <entry><ind>  1 </ind><dep> -5 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00813 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 0.01543 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>yoke</object-name>
+    <property>controls/flight/aileron</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> 0.05493 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 0.65849 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Yokes visible ou non -->
+  <animation>
+    <type>select</type>
+    <object-name>VolantsComplets</object-name>
+    <condition>
+      <property>/sim/model/hide-yoke</property>
+    </condition>
+  </animation>
+  
+</PropertyList>

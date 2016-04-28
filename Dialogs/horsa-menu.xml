@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
+=======
+<?xml version="1.0" encoding="ISO-8859-1"?>
+>>>>>>> svn/master
 
 <PropertyList>
 
@@ -14,12 +18,27 @@
         </binding>
       </item>
       <item>
+<<<<<<< HEAD
+=======
+        <label>Show/hide Yokes</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/hide-yoke</property>
+        </binding>
+      </item>
+      <!--
+      <item>
+>>>>>>> svn/master
         <label>Immatriculation</label>
         <binding>
           <command>nasal</command>
           <script>horsa.immat_dialog.toggle()</script>
         </binding>
       </item>
+<<<<<<< HEAD
+=======
+      -->
+>>>>>>> svn/master
     </menu>
   </default>
 

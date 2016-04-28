@@ -339,4 +339,8 @@ var runDragger = func {
 } # End Function runDragger
 
 var dragging = setlistener("/sim/glider/dragger/hooked", runDragger);
+<<<<<<< HEAD
  
+=======
+ 
+>>>>>>> svn/master

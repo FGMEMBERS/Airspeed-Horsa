@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>AirSpeed Horsa</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>d</name>
+    <desc>Open/Close canopy</desc>
+  </key>
+  <key>
+    <name>throttle</name>
+    <desc>control airbrakes (full throttle=full airbrakes)</desc>
+  </key>
+  <key>
+    <name>Ctrl-w</name>
+    <desc>Place Winch 1000m in front of aircraft</desc>
+  </key>
+  <key>
+    <name>W</name>
+    <desc>Toggle winch hook</desc>
+  </key>
+  <key>
+    <name>w</name>
+    <desc>Increase winch speed</desc>
+  </key>
+  <key>
+    <name>Ctrl-o</name>
+    <desc>Find aircraft for aerotow</desc>
+  </key>
+  <key>
+    <name>o</name>
+    <desc>Lock aerotow hook</desc>
+  </key>
+  <key>
+    <name>O</name>
+    <desc>Open aerotow hook</desc>
+  </key>
+  
+</PropertyList>

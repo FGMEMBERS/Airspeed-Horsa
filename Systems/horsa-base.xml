@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="views.xml">
+
+    <startup>
+      <splash-texture>Aircraft/Airspeed-Horsa/horsa-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path archive="y">Aircraft/Airspeed-Horsa/Models/horsa.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <hide-yoke>true</hide-yoke>
+    </model>
+
+    <sound>
+      <path>Aircraft/Airspeed-Horsa/Sounds/horsa-sound.xml</path>
+    </sound>
+
+    <ai>
+      <scenario>thermal_demo</scenario>
+    </ai>
+    
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int   n="0" type="int">  0 </int>                                         <!-- 0 immat -->
+        <int   n="1" type="int">  0 </int>                                         <!-- 1 immat -->
+        <int   n="2" type="int">  0 </int>                                         <!-- 2 immat -->
+        <int   n="3" type="int">  0 </int>                                         <!-- 3 immat -->
+        <int   n="4" type="int">  0 </int>                                         <!-- 4 immat -->
+        <int   n="5" type="int">  0 </int>                                         <!-- 5 immat -->
+        <int   n="6" type="bool"> 1 </int>                                         <!-- 6 -->
+        <int   n="7" type="int">  0 </int>                                         <!-- 7  -->
+        <int   n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>     <!-- 8 nav-lights -->
+        <int   n="9" alias="/sim/model/lights/beacon/state">  false </int>         <!-- 9 strobe-lights -->
+        <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/position/altitude-ft"> 0 </float>                     <!-- altitude for Smoke/Trail -->
+        <float n="4" alias="/gear/gear[0]/wow/"/>
+        <float n="5" alias="/gear/gear[1]/wow/"/>
+        <float n="6" alias="/gear/gear[2]/wow/"/>
+        <float n="7" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="8" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="9" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <systems>
+      <electrical>
+        <path></path>
+      </electrical>
+    </systems>
+    
+    <help include="help.xml"/>
+
+    <hitches include="hitches.xml"/>
+
+    <menubar include="../Dialogs/horsa-menu.xml"/>
+
+  </sim>
+
+  <input include="horsa-keyboard.xml"/>
+  
+  <controls include="controls.xml"/>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/Airspeed-Horsa/Nasal/doors.nas</file>
+    </doors>
+    <horsa>
+      <file>Aircraft/Airspeed-Horsa/Nasal/liveries.nas</file>
+      <file>Aircraft/Airspeed-Horsa/Nasal/light.nas</file>
+    </horsa>
+    <glider>
+      <file>Aircraft/Airspeed-Horsa/Nasal/dragger.nas</file>
+      <!-- <file>Aircraft/Airspeed-Horsa/Nasal/towing.nas</file> -->
+      <file>Aircraft/Airspeed-Horsa/Nasal/messages.nas</file>
+    </glider>
+  </nasal>
+
+</PropertyList>

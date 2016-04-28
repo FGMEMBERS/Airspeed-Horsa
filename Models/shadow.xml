@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
@@ -11,17 +12,51 @@
     <object-name>shadow</object-name>
   </animation>
 
+=======
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>shadow.ac</path>
+  
+  <animation>
+    <!-- Objets opaques -->
+    
+    <!-- Objets transparents -->
+    <object-name>shadow</object-name>
+  </animation>
+  
+>>>>>>> svn/master
   <animation>
     <type>noshadow</type>
     <object-name>shadow</object-name>
   </animation>
+<<<<<<< HEAD
 
+=======
+  
+  <animation>
+    <type>select</type>
+    <object-name>shadow</object-name>
+    <condition>
+      <and>
+        <not><property>sim/freeze/replay-state</property></not>
+        <not><property>sim/rendering/rembrandt/enabled</property></not>
+      </and>
+    </condition>
+  </animation>
+  
+>>>>>>> svn/master
   <!-- Une ombre pour OSG en attendant mieux ;) basé sur l'ombre du DC 3-->
   <!-- pitch -->
   <animation>
     <type>rotate</type>
     <object-name>shadow</object-name>
+<<<<<<< HEAD
     <property>orientation/pitch-deg</property>
+=======
+    <property>/orientation/pitch-deg</property>
+>>>>>>> svn/master
     <factor> -1 </factor>
     <axis>
       <x> 0 </x>
@@ -29,12 +64,20 @@
       <z> 0 </z>
     </axis>
   </animation>
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> svn/master
   <!-- roll -->
   <animation>
     <type>rotate</type>
     <object-name>shadow</object-name>
+<<<<<<< HEAD
     <property>orientation/roll-deg</property>
+=======
+    <property>/orientation/roll-deg</property>
+>>>>>>> svn/master
     <factor> 1 </factor>
     <axis>
       <x> 1 </x>
@@ -42,12 +85,20 @@
       <z> 0 </z>
     </axis>
   </animation>
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> svn/master
   <!-- Translate to ground level -->
   <animation>
     <type>translate</type>
     <object-name>shadow</object-name>
+<<<<<<< HEAD
     <!--<property>position/gear-agl-ft</property>-->
+=======
+    <!-- /position/gear-agl-m -->
+>>>>>>> svn/master
     <property>sim/multiplay/generic/float[2]</property>
     <factor> -1 </factor>
     <axis>
@@ -56,6 +107,11 @@
       <z> 1 </z>
     </axis>
   </animation>
+<<<<<<< HEAD
 
 </PropertyList>
 
+=======
+  
+</PropertyList>
+>>>>>>> svn/master

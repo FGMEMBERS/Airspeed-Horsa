@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
+=======
+<?xml version="1.0" encoding="ISO-8859-1"?>
+>>>>>>> svn/master
 
 <PropertyList>
 
@@ -30,6 +34,10 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
+<<<<<<< HEAD
+=======
+    <object-name>porte</object-name>
+>>>>>>> svn/master
     <object-name>ailes</object-name>
     <object-name>breakG</object-name>
     <object-name>breakD</object-name>
@@ -42,9 +50,17 @@
     <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
+<<<<<<< HEAD
 
     <object-name>trous</object-name>
     <object-name>axeA</object-name>
+=======
+    <object-name>antenne</object-name>
+    
+    <object-name>trous</object-name>
+    <object-name>axeA</object-name>
+    <object-name>axeAB</object-name>
+>>>>>>> svn/master
     <object-name>roueA</object-name>
     <object-name>axeG1</object-name>
     <object-name>axeG2</object-name>
@@ -57,6 +73,7 @@
     <object-name>ressort</object-name>
     <object-name>axeC</object-name>
     <object-name>patin</object-name>
+<<<<<<< HEAD
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -65,6 +82,19 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
+=======
+    <object-name>cable</object-name>
+    
+    <!-- Objets transparents -->
+    <object-name>vitres</object-name>
+    <object-name>vitreporte</object-name>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>porte</object-name>
+>>>>>>> svn/master
     <object-name>ailes</object-name>
     <object-name>breakG</object-name>
     <object-name>breakD</object-name>
@@ -77,9 +107,17 @@
     <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
+<<<<<<< HEAD
 
     <object-name>trous</object-name>
     <object-name>axeA</object-name>
+=======
+    <object-name>antenne</object-name>
+    
+    <object-name>trous</object-name>
+    <object-name>axeA</object-name>
+    <object-name>axeAB</object-name>
+>>>>>>> svn/master
     <object-name>roueA</object-name>
     <object-name>axeG1</object-name>
     <object-name>axeG2</object-name>
@@ -90,6 +128,7 @@
     <object-name>axeD3</object-name>
     <object-name>roueD</object-name>
     <object-name>ressort</object-name>
+<<<<<<< HEAD
     <object-name>patin</object-name>
 
     <property-base>sim/model/livery</property-base>
@@ -108,11 +147,21 @@
       <blue-prop>ambient/blue</blue-prop>
     </ambient>
 -->
+=======
+    <object-name>axeC</object-name>
+    <object-name>patin</object-name>
+    <object-name>cable</object-name>
+    
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+>>>>>>> svn/master
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
+<<<<<<< HEAD
 
     <emission>
       <red-prop>emission/red</red-prop>
@@ -124,11 +173,17 @@
       <shininess-prop>shininess</shininess-prop>
     </shininess>
 -->
+=======
+>>>>>>> svn/master
   </animation>
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
+<<<<<<< HEAD
+=======
+    <object-name>porte</object-name>
+>>>>>>> svn/master
     <object-name>ailes</object-name>
     <object-name>breakG</object-name>
     <object-name>breakD</object-name>
@@ -141,6 +196,7 @@
     <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
+<<<<<<< HEAD
   </effect>
 
   <animation>
@@ -155,6 +211,24 @@
     <object-name>vitres</object-name>
   </animation>
 
+=======
+    <object-name>antenne</object-name>
+  </effect>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Airspeed-Horsa/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitres</object-name>
+    <object-name>vitreporte</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitres</object-name>
+    <object-name>vitreporte</object-name>
+  </effect>
+  
+>>>>>>> svn/master
   <!-- Immatriculation
   <model>
     <path>Aircraft/Airspeed-Horsa/Models/Immat/immat.xml</path>
@@ -167,8 +241,17 @@
 
   <!-- Une ombre pour OSG -->
   <model>
+<<<<<<< HEAD
     <name>shadowOSG</name>
     <path>Aircraft/Airspeed-Horsa/Models/shadow.xml</path>
+=======
+    <path>Aircraft/Airspeed-Horsa/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -3.6 </z-m>
+    </offsets>
+>>>>>>> svn/master
   </model>
 
   <!-- Effets sur le sol -->
@@ -202,6 +285,43 @@
     </offsets>
   </model>
 
+<<<<<<< HEAD
+=======
+  <!-- Gouverne de profondeur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeur</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m> 8.432 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.546 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>direction</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 20 </factor>
+    <axis>
+      <x1-m>  8.559 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m> -0.238 </z1-m>
+      <x2-m>  8.547 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  2.095 </z2-m>
+    </axis>
+  </animation>
+  
+>>>>>>> svn/master
   <!-- Animations des ailerons -->
   <animation>
     <type>rotate</type>
@@ -238,7 +358,11 @@
     <type>rotate</type>
     <object-name>voletG1</object-name>
     <property>surface-positions/flap-pos-norm</property>
+<<<<<<< HEAD
     <factor> -84 </factor>
+=======
+    <factor> 75 </factor>
+>>>>>>> svn/master
     <axis>
       <x1-m> -0.206 </x1-m>
       <y1-m> -3.493 </y1-m>
@@ -253,7 +377,11 @@
     <type>rotate</type>
     <object-name>voletG2</object-name>
     <property>surface-positions/flap-pos-norm</property>
+<<<<<<< HEAD
     <factor> -84 </factor>
+=======
+    <factor> 75 </factor>
+>>>>>>> svn/master
     <axis>
       <x1-m> -0.206 </x1-m>
       <y1-m> -6.197 </y1-m>
@@ -268,7 +396,11 @@
     <type>rotate</type>
     <object-name>voletD2</object-name>
     <property>surface-positions/flap-pos-norm</property>
+<<<<<<< HEAD
     <factor> -84 </factor>
+=======
+    <factor> 75 </factor>
+>>>>>>> svn/master
     <axis>
       <x1-m> -0.206 </x1-m>
       <y1-m>  3.493 </y1-m>
@@ -283,7 +415,11 @@
     <type>rotate</type>
     <object-name>voletD1</object-name>
     <property>surface-positions/flap-pos-norm</property>
+<<<<<<< HEAD
     <factor> -84 </factor>
+=======
+    <factor> 75 </factor>
+>>>>>>> svn/master
     <axis>
       <x1-m> -0.206 </x1-m>
       <y1-m>  1.122 </y1-m>
@@ -294,6 +430,7 @@
     </axis>
   </animation>
 
+<<<<<<< HEAD
   <!-- Gouverne de profondeur -->
   <animation>
     <type>rotate</type>
@@ -328,6 +465,8 @@
     </axis>
   </animation>
 
+=======
+>>>>>>> svn/master
   <!-- Aérofreins -->
   <animation>
     <type>translate</type>
@@ -360,6 +499,31 @@
     </axis>
   </animation>
 
+<<<<<<< HEAD
+=======
+  <!-- Compression -->
+  <animation>
+    <name>TrainA</name>
+    <object-name>roueA</object-name>
+    <object-name>axeAB</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>TrainA</object-name>
+    <property>/gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.16 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+>>>>>>> svn/master
   <animation>
     <name>TrainG</name>
     <object-name>roueG</object-name>
@@ -371,9 +535,14 @@
     <object-name>TrainG</object-name>
     <property>/gear/gear[1]/compression-norm</property>
     <interpolation>
+<<<<<<< HEAD
       <entry><ind> 0.000 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.005 </ind><dep>   8 </dep></entry>
       <entry><ind> 1.000 </ind><dep> -10 </dep></entry>
+=======
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -10 </dep></entry>
+>>>>>>> svn/master
     </interpolation>
     <center>
       <x-m> -1.804 </x-m>
@@ -388,6 +557,64 @@
   </animation>
 
   <animation>
+<<<<<<< HEAD
+=======
+    <type>translate</type>
+    <object-name>axeG2</object-name>
+    <property>/gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.4 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeG2</object-name>
+    <property>/gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -5 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.41666 </x-m>
+      <y-m> -2.51950 </y-m>
+      <z-m> -2.46375 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeG3</object-name>
+    <property>/gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -5 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -2.60989 </x-m>
+      <y-m> -2.51950 </y-m>
+      <z-m> -0.26171 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+>>>>>>> svn/master
     <name>TrainD</name>
     <object-name>roueD</object-name>
     <object-name>axeD1</object-name>
@@ -399,7 +626,10 @@
     <property>/gear/gear[2]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0 </dep></entry>
+<<<<<<< HEAD
       <entry><ind> 0.005 </ind><dep> -8 </dep></entry>
+=======
+>>>>>>> svn/master
       <entry><ind> 1.000 </ind><dep> 10 </dep></entry>
     </interpolation>
     <center>
@@ -414,6 +644,7 @@
     </axis>
   </animation>
 
+<<<<<<< HEAD
   <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
   <animation>
     <type>rotate</type>
@@ -424,6 +655,79 @@
       <x-m> -8.073 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -2.681 </z-m>
+=======
+  <animation>
+    <type>translate</type>
+    <object-name>axeD2</object-name>
+    <property>/gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.4 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeD2</object-name>
+    <property>/gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -5 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.41666 </x-m>
+      <y-m>  2.51950 </y-m>
+      <z-m> -2.46375 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeD3</object-name>
+    <property>/gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -5 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -2.60989 </x-m>
+      <y-m>  2.51950 </y-m>
+      <z-m> -0.26171 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
+  <animation>
+    <name>RoueAvant</name>
+    <object-name>roueA</object-name>
+    <object-name>axeAB</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueAvant</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m> -8.16435 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -2.20943 </z-m>
+>>>>>>> svn/master
     </center>
     <axis>
       <x>  0 </x>
@@ -436,7 +740,12 @@
   <animation>
     <type>spin</type>
     <object-name>roueA</object-name>
+<<<<<<< HEAD
     <property>gear/gear[0]/tire-rpm</property>
+=======
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+>>>>>>> svn/master
     <center>
       <x-m> -8.073 </x-m>
       <y-m>  0.000 </y-m>
@@ -452,7 +761,12 @@
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
+<<<<<<< HEAD
     <property>gear/gear[1]/tire-rpm</property>
+=======
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> -30 </factor>
+>>>>>>> svn/master
     <axis>
       <x1-m> -1.413 </x1-m>
       <y1-m> -2.729 </y1-m>
@@ -466,6 +780,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
+<<<<<<< HEAD
     <property>gear/gear[2]/tire-rpm</property>
     <axis>
       <x1-m> -1.413 </x1-m>
@@ -473,9 +788,113 @@
       <z1-m> -2.492 </z1-m>
       <x2-m> -1.413 </x2-m>
       <y2-m> -2.729 </y2-m>
+=======
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> -30 </factor>
+    <axis>
+      <x1-m> -1.413 </x1-m>
+      <y1-m>  2.597 </y1-m>
+      <z1-m> -2.492 </z1-m>
+      <x2-m> -1.413 </x2-m>
+      <y2-m>  2.729 </y2-m>
+>>>>>>> svn/master
       <z2-m> -2.515 </z2-m>
     </axis>
   </animation>
 
+<<<<<<< HEAD
 </PropertyList>
 
+=======
+  <!-- Porte -->
+  <animation>
+    <name>PorteGauche</name>
+    <object-name>porte</object-name>
+    <object-name>vitreporte</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>PorteGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>PorteGauche</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> -0.02 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.02 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>PorteGauche</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.9 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/Airspeed-Horsa/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m>  -0.87444 </x-m>
+      <y-m> -13.36691 </y-m>
+      <z-m>   0.27609 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Airspeed-Horsa/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  -0.86252 </x-m>
+      <y-m> -13.36691 </y-m>
+      <z-m>   0.27423 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Airspeed-Horsa/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -0.87444 </x-m>
+      <y-m> 13.36691 </y-m>
+      <z-m>  0.27609 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Airspeed-Horsa/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -0.86252 </x-m>
+      <y-m> 13.36691 </y-m>
+      <z-m>  0.27423 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>
+>>>>>>> svn/master

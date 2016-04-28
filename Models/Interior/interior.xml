@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
+=======
+<?xml version="1.0" encoding="ISO-8859-1"?>
+>>>>>>> svn/master
 
 <PropertyList>
 
@@ -8,6 +12,7 @@
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
     <object-name>inttour</object-name>
+<<<<<<< HEAD
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
@@ -25,6 +30,23 @@
     <object-name>intvitres</object-name>
   </animation>
 
+=======
+    <object-name>intporte</object-name>
+    <object-name>cloison</object-name>
+    <object-name>planchet</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+  </effect>
+  
+>>>>>>> svn/master
   <!-- Pilote -->
   <model>
     <path>Aircraft/Airspeed-Horsa/Models/Pilot/pilot.xml</path>
@@ -35,6 +57,7 @@
     </offsets>
   </model>
 
+<<<<<<< HEAD
   <!-- Planche de bord avant
   <model>
     <name>Panel</name>
@@ -51,3 +74,70 @@
 
 </PropertyList>
 
+=======
+  <!-- Planche de bord avant -->
+  <model>
+    <name>Panel</name>
+    <path>Aircraft/Airspeed-Horsa/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -9.41818 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.77525 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Porte -->
+  <animation>
+    <name>IntPorteGauche</name>
+    <object-name>intporte</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>IntPorteGauche</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> -0.02 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.02 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>IntPorteGauche</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.9 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>
+>>>>>>> svn/master

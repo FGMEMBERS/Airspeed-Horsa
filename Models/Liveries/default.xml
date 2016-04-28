@@ -1,11 +1,21 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 
 <PropertyList>
   <sim>
+=======
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <sim>
+    
+>>>>>>> svn/master
     <model>
       <livery>
         <name type="string">Default</name>
         <texture>texture.png</texture>
+<<<<<<< HEAD
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -19,11 +29,14 @@
           <blue>  0.5 </blue>
         </ambient>
 -->
+=======
+>>>>>>> svn/master
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
+<<<<<<< HEAD
 
         <emission>
           <red>   0.2 </red>
@@ -40,4 +53,11 @@
       </livery>
     </model>
   </sim>
+=======
+      </livery>
+    </model>
+    
+  </sim>
+  
+>>>>>>> svn/master
 </PropertyList>
