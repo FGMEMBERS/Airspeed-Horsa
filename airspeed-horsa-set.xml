@@ -10,6 +10,16 @@
     
     <flight-model>yasim</flight-model>
     <aero>Systems/horsa-yasim</aero>
+
+    <tags>
+      <tag>mid-wing</tag>
+      <tag>tricycle</tag>
+      <tag>fixed-gear</tag>
+      <tag>glider</tag>
+      <tag>transport</tag>
+      <tag>cargo</tag>
+      <tag>ww2</tag>
+    </tags>
     
     <rating>
      <FDM type="int">     2 </FDM>
