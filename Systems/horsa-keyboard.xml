@@ -68,7 +68,7 @@
     
     <key n="15">
       <name>Ctrl-o</name>
-      <desc>Find aircraft for aerotow</desc>
+      <desc>Find AI aircraft for aerotow</desc>
       <binding>
         <command>nasal</command>
         <script>
@@ -79,7 +79,11 @@
           glider.runDragRobot();
         </script>
       </binding>
-      <!--
+    </key>
+
+    <key n="20">
+      <name>Ctrl-t</name>
+      <desc>Find MP aircraft for aerotow</desc>
       <binding>
         <command>property-assign</command>
         <property>/controls/aerotow/find-aircraft</property>
@@ -92,7 +96,6 @@
           <value type="bool">false</value>
         </binding>
       </mod-up>
-      -->
     </key>
     
     <key n="111">
