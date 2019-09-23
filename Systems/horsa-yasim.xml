@@ -90,6 +90,7 @@
         compression="0.15"
         spring="0.8"
         sfric="1"
+        stiction="1"
         dfric="1">
         <control-input axis="/controls/flight/rudder" control="STEER" src0="-1" src1="1" dst0="-0.1" dst1="0.1"/>
   </gear>
@@ -98,6 +99,7 @@
   <gear x="1.400" y=" 2.590" z="-2.943"
         compression="0.12"
         spring="1.8" 
+        stiction="1"
         damp="0.03">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
@@ -107,6 +109,7 @@
   <gear x="1.400" y="-2.590" z="-2.943"
         compression="0.12"
         spring="1.8" 
+        stiction="1"
         damp="0.03">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
@@ -136,14 +139,14 @@
   <hitch name="aerotow" 
          x="8.154" y="0" z="-2.335"
          force-is-calculated-by-other="0">
-         <tow length="60" 
+         <tow length="120" 
               weight-per-meter="0.035" 
               elastic-constant="9000" 
-              break-force="10000" 
+              break-force="100000" 
               mp-auto-connect-period="0.0"/>
          <winch max-tow-length="1000" 
                 min-tow-length="60" 
-                initial-tow-length="60"/>
+                initial-tow-length="120"/>
          <control-input axis="/controls/aerotow/find-aircraft" control="FINDAITOW"/>
   </hitch>
 

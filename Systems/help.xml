@@ -26,7 +26,11 @@
   </key>
   <key>
     <name>Ctrl-o</name>
-    <desc>Find aircraft for aerotow</desc>
+    <desc>Find AI aircraft for aerotow</desc>
+  </key>
+  <key>
+    <name>Ctrl-t</name>
+    <desc>Find MP aircraft for aerotow</desc>
   </key>
   <key>
     <name>o</name>
